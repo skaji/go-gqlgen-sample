@@ -1,0 +1,13 @@
+type Query {
+  users: [User!]
+}
+
+type User {
+  name: String!
+  location: String!
+  friends(filter: Filter!): [User!]
+}
+
+input Filter {
+  location: String! = "Japan"
+}

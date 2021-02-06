@@ -1,0 +1,4 @@
+models:
+  User:
+    model:
+      - github.com/skaji/go-gqlgen-sample/issue.User
